@@ -15,7 +15,6 @@ sudo snap install slack --classic &&
 sudo snap install skype --classic &&  
 sudo snap install sublime-text --classic &&  
 sudo snap install sublime-merge --classic &&
-sudo snap install --edge node --classic && 
 sudo snap install insomnia && 
 sudo snap install postman &&
 sudo snap install redis-desktop-manager && 
