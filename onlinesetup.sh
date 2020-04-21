@@ -14,7 +14,7 @@ echo "Instaling the basic packages"
 echo "##########################################################################"
 echo ""
 
-sudo apt install python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim virtualbox -y
+sudo apt install python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim ubuntu-restricted-extras -y
 
 echo ""
 echo "Instaling the snap packages"
