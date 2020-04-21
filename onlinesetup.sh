@@ -3,6 +3,8 @@
 set -x
 
 sudo dpkg --configure -a
+sudo rm /var/lib/dpkg/lock-frontend; sudo rm /var/cache/apt/archives/lock;
+
 sudo apt update
 
 sudo apt install python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim virtualbox ubuntu-restricted-extras -y --force-yes
