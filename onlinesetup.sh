@@ -4,9 +4,12 @@ set -x
 
 sudo dpkg --configure -a
 sudo rm /var/lib/dpkg/lock-frontend; sudo rm /var/cache/apt/archives/lock;
+
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt update
 
-sudo env ACCEPT_EULA=Y apt install python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim virtualbox ubuntu-restricted-extras -y
+sudo env ACCEPT_EULA=Y apt install python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim virtualbox ubuntu-restricted-extras google-chrome-stable -y
 
 sudo snap install slack --classic &&  
 sudo snap install skype --classic &&  
@@ -23,8 +26,6 @@ sudo snap install mailspring
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
 sudo flatpak install flathub io.dbeaver.DBeaverCommunity -y
-
-cd ~/Downloads/ && wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i *.deb
 
 sudo groupadd docker
 sudo gpasswd -a $USER docker
