@@ -2,6 +2,7 @@
 
 set -x
 
+sudo dpkg --configure -a
 sudo apt update
 
 sudo apt install python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim ubuntu-restricted-extras -y
