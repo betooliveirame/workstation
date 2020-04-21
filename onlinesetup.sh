@@ -28,7 +28,6 @@ sudo snap install mailspring &&
 sudo snap install mysql-workbench-community --beta &&
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
-sudo flatpak install flathub io.dbeaver.DBeaverCommunity -y  &&
 
 sudo groupadd docker  &&
 sudo gpasswd -a $USER docker  &&
