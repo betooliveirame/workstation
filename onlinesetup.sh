@@ -26,7 +26,7 @@ sudo snap install whatsdesk &&
 sudo snap install wps-office-multilang && 
 sudo snap install mailspring &&
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
 sudo flatpak install flathub io.dbeaver.DBeaverCommunity -y  &&
 
 sudo groupadd docker  &&
