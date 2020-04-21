@@ -23,6 +23,7 @@ sudo apt install \
 		flatpak \
 		gnome-software-plugin-flatpak \
 		vim \
+		virtualbox \
 		-y &&
 
 ## Instalando pacotes Snap ##
