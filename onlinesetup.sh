@@ -12,7 +12,7 @@ sudo apt update &&
 
 sudo apt install \
 		python3 \
-		python-pip \
+		python3-pip \
 		nautilus-dropbox \
 		docker \
 		docker-compose \
@@ -24,6 +24,7 @@ sudo apt install \
 		gnome-software-plugin-flatpak \
 		vim \
 		virtualbox \
+		ubuntu-restricted-extras \
 		-y &&
 
 ## Instalando pacotes Snap ##
