@@ -29,9 +29,7 @@ sudo snap install mysql-workbench-community --beta &&
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
 
-sudo groupadd docker  &&
 sudo gpasswd -a $USER docker  &&
-sudo service docker.io restart  &&
 
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y  &&
 
