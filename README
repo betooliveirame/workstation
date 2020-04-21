@@ -1,7 +1,0 @@
-## My Workstation
-
-### How to use
-
-```sh
-curl -s https://raw.githubusercontent.com/betooliveirame/workstation/master/onlinesetup.sh | bash
-```
