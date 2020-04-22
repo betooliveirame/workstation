@@ -22,7 +22,7 @@ sudo env ACCEPT_EULA=Y apt install curl wget gnupg2 ca-certificates lsb-release 
 sudo gpasswd -a $USER docker  &&
 
 # php 7.3 for magento 2
-sudo echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu eoan main" > /etc/apt/sources.list.d/ondrej-ubuntu-php-eoan.list &&
+sudo sh -c 'echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu eoan main" > /etc/apt/sources.list.d/ondrej-ubuntu-php-eoan.list' &&
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C &&
 sudo apt update &&
 sudo apt install -y zip unzip php7.3-cli php7.3-common php7.3-opcache php7.3-xml php7.3-gd php7.3-dev php7.3-mysql php7.3-intl php7.3-mbstring php7.3-bcmath php7.3-json php7.3-soap php7.3-zip php7.3-curl &&
