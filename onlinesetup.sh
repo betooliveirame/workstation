@@ -17,7 +17,7 @@ echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select tr
 echo ttf-mscorefonts-installer msttcorefonts/present-mscorefonts-eula note | sudo debconf-set-selections  &&
 
 # basic packes
-sudo env ACCEPT_EULA=Y apt install curl wget gnupg2 ca-certificates lsb-release apt-transport-https python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim virtualbox ubuntu-restricted-extras google-chrome-stable -y  &&
+sudo env ACCEPT_EULA=Y apt install curl wget gnupg2 ca-certificates lsb-release apt-transport-https python3 python3-pip nautilus-dropbox docker.io docker-compose git git-flow build-essential libssl-dev flatpak gnome-software-plugin-flatpak vim virtualbox ubuntu-restricted-extras google-chrome-stable awscli -y  &&
 
 sudo gpasswd -a $USER docker  &&
 
