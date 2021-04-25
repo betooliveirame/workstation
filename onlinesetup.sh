@@ -59,9 +59,6 @@ sudo snap install insomnia &&
 sudo snap install postman &&
 sudo snap install redis-desktop-manager && 
 sudo snap install spotify &&
-sudo snap install odio &&
-sudo snap install whatsdesk &&
-sudo snap install wps-office-multilang && 
 sudo snap install mailspring &&
 sudo snap install mysql-workbench-community --beta &&
 
