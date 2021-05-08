@@ -16,6 +16,9 @@ sudo apt update &&
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections  &&
 echo ttf-mscorefonts-installer msttcorefonts/present-mscorefonts-eula note | sudo debconf-set-selections  &&
 
+#tzdata fix problem
+ln -snf /usr/share/zoneinfo/$(curl https://ipapi.co/timezone) /etc/localtime
+
 # basic packes
 sudo env ACCEPT_EULA=Y apt install curl \
 wget \
